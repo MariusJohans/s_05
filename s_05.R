@@ -147,7 +147,6 @@ model_0 <- '
 fit_model_0 <- sem(model_0, data = Data)
 fitmeasures(fit_model_0, c("cfi","tli", "rmsea", "srmr"))
 summary(fit_model_0, fit.measures = TRUE, standardized = TRUE)
-## All fit statistics appear to be good, a few items covary a bit. 
 ## CIs for SRMR
 fit_model_sem_boot <- sem(model_0, data = Data, se = "bootstrap", 
                           bootstrap = 1000)
