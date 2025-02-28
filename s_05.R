@@ -7,7 +7,6 @@
 ##
 ##=============================================================================
 
-## Libraries
 library(foreign)
 library(readr)
 library(lavaan)
