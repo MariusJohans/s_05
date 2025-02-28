@@ -61,7 +61,6 @@ Data_imputed = mice(Data,
                     MaxNWts = 1000000)
 Data_imputed = complete(Data_imputed)
 write_xlsx(Data_imputed, "C:\\Users\\mjo101/Desktop/Dataset.xlsx")
-## Reload the new data set to make sure everything is fine.
 Data <- read_excel("Dataset.xlsx", col_names = TRUE)
 percent(Data$s_1) ## Gender.
 percent(Data$s_2) ## Age.
