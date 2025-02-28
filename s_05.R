@@ -76,7 +76,6 @@ describe(Data$AutonomySup)
 describe(Data$IntrMot)    
 describe(Data$ExtrinsMot) 
 describe(Data$Intentions) 
-
 ## Cronbach's alphas
 AS_alpha <- data.frame(Data$s_33, Data$s_34, Data$s_35,
                        Data$s_36, Data$s_37, Data$s_38)
@@ -93,7 +92,6 @@ BAS_alpha <- data.frame(Data$s_44, Data$s_45, Data$s_48)
 TI_alpha  <- data.frame(Data$s_146, Data$s_147, Data$s_148,
                         Data$s_160)
   cronbach.alpha(TI_alpha) 
-
 ## Correlations of the main variables
 corr <- data.frame(Data$IntrMot, Data$ExtrinsMot, Data$Compe, Data$AutonomySup,
                    Data$BeiAuSu, Data$Intentions)
