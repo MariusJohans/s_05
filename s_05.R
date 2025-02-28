@@ -60,7 +60,6 @@ Data_imputed = mice(Data,
                     m = 500, 
                     MaxNWts = 1000000)
 Data_imputed = complete(Data_imputed)
-## Now to export the new data frame for consistency.
 write_xlsx(Data_imputed, "C:\\Users\\mjo101/Desktop/Dataset.xlsx")
 ## Reload the new data set to make sure everything is fine.
 Data <- read_excel("Dataset.xlsx", col_names = TRUE)
