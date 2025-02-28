@@ -51,8 +51,6 @@ Data %>% is.na() %>% colSums()
 ## equations: what is it and how does it work?" for more
 ## documentation. 
 mcar_test(Data)
-## Data appear to be missing at random, we can therefore
-## impute missing values.
 init  = mice(Data, maxit = 0)
 meth  = init$method
 predM = init$predictorMatrix
